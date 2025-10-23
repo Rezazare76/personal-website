@@ -1,0 +1,33 @@
+.container {
+  input:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  input:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  input:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  input:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  input:nth-child(5) {
+    animation-delay: 1s;
+  }
+  input:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+}
+.inputLoad {
+  animation: inputLoadAnimation 1s forwards;
+  opacity: 0;
+}
+@keyframes inputLoadAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}

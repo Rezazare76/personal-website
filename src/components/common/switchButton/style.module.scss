@@ -1,0 +1,12 @@
+@keyframes dynamic-animation {
+  from {
+    transform: scale(0.98);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.dynamic {
+  animation: dynamic-animation 500ms forwards;
+}

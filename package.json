@@ -1,0 +1,50 @@
+{
+  "name": "reza-zare-frontend-developer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run open-browser && next dev -p 3001 --hostname 0.0.0.0 --experimental-https",
+    "prebuild": "npm run knip || true",
+    "build": "ANALYZE=true next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "open-browser": "start https://localhost:3001",
+    "knip": "knip",
+    "check": "npm run lint && npm run knip"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.1",
+    "atropos": "^2.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "custom-type": "^1.0.1",
+    "jalaali-js": "^1.2.8",
+    "next": "15.4.6",
+    "nextjs-toploader": "^3.8.16",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.62.0",
+    "tailwind-merge": "^3.3.1",
+    "uuid": "^11.1.0",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@next/bundle-analyzer": "^15.4.6",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9.27.0",
+    "eslint-config-next": "15.3.2",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-tailwind-rules": "^1.0.0",
+    "knip": "^5.62.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "sass": "^1.90.0",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5.9.2"
+  }
+}

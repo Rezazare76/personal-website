@@ -1,0 +1,20 @@
+.left-rounded::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-top-right-radius: 64px;
+}
+.right-rounded::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-top-left-radius: 64px;
+}

@@ -1,0 +1,51 @@
+@import "./tailwind.css";
+@import "./utilities.css";
+@import "./fonts.css";
+
+:root {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+/* html {
+  scrollbar-gutter: stable both-edges;
+} */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-850);
+  border-radius: 10px;
+  border: 2px solid var(--color-gray-900);
+}
+.custom-scroll::-webkit-scrollbar-track {
+  margin: 8px 3px;
+}
+#nprogress .peg::after {
+  content: "";
+  padding: 5px;
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: -5px;
+  background-color: var(--color-primary-400);
+  box-shadow:
+    0 0 16px 4px var(--color-primary-400),
+    0 0 32px 8px #01a4eb80;
+  animation: nprogress-shadow-pulse 1s infinite alternate;
+}
+
+@keyframes nprogress-shadow-pulse {
+  0% {
+    box-shadow:
+      0 0 8px 2px var(--color-primary-400),
+      0 0 16px 4px #54bfe4;
+  }
+  100% {
+    box-shadow:
+      0 0 24px 8px var(--color-primary-400),
+      0 0 48px 16px #54bfe4;
+  }
+}

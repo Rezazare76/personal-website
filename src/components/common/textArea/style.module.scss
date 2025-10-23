@@ -1,0 +1,22 @@
+.scroll {
+  :global {
+    .simplebar-content {
+      height: 100%;
+    }
+  }
+}
+
+.disabled {
+  background-color: #f7f7f9 !important;
+
+  &::placeholder {
+    color: #b3b3b3 !important;
+  }
+
+  &::-ms-input-placeholder {
+    color: #b3b3b3 !important;
+  }
+  textarea {
+    background-color: #f7f7f9;
+  }
+}

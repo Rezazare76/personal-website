@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "IRANYekanXVFaNumVF";
+  src:
+    /* Modern browsers supporting WOFF2 and variable fonts */
+    url("/fonts/IRANYekanXVFaNumVF.woff2") format("woff2-variations"),
+    /* Browsers supporting WOFF2 but not variations (will likely pick a default instance) */
+      url("/fonts/IRANYekanXVFaNumVF.woff2") format("woff2");
+  /* Define the full range of weights available in the variable font */
+  font-weight: 100 1000;
+  /* Define the default style */
+  font-style: normal;
+  /* Ensure text remains visible during font loading by showing a fallback first */
+  font-display: swap;
+}

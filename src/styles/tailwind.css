@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@theme inline {
+  /* ******** colors section ******** */
+  --color-gray-850: #2c2c2c;
+  --color-gray-900: #212121;
+  --color-gray-950: #181818;
+  /* ******** elham colors section ******** */
+  --color-elham-bg: #f2f2f7;
+  --color-elham-custom-600: #fafafc;
+  --color-elham-custom-400: #ededf7;
+  --color-elham-secondary-200: #faf9ff;
+  --color-elham-secondary-300: #f1f1f9;
+  --color-elham-midnight-blue: #333363;
+
+  /* ******** screens section ******** */
+  --breakpoint-2xs: 320px;
+  --breakpoint-sm: 600px;
+  /* ******** font section ******** */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-yekan: "IRANYekanXVFaNumVF";
+  /* ******** shadow ******** */
+  /* ******** elham shadow section ******** */
+  --shadow-elham-custom-sm: 0 0 22px -20px;
+  --shadow-elham-custom-lg: 0 0 22px 10px;
+}
