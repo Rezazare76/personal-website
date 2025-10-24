@@ -45,7 +45,7 @@ export default function RootLayout({
       dir="ltr"
     >
       <body
-        className="custom-scroll relative mx-auto  
+        className="custom-scroll relative mx-auto  min-h-dvh mb-2
        overflow-y-auto overflow-x-clip rounded-xl bg-gray-900 px-2"
       >
         <NextTopLoader

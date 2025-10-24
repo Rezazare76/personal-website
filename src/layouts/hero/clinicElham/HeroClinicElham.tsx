@@ -11,7 +11,7 @@ const HeroClinicElham = () => {
       dir="rtl"
       aria-hidden
     >
-      <div className="reza bg-gray-850 sticky top-6 h-screen  rounded-t-2xl" />
+      <div className="bg-gray-850 sticky top-6 h-screen  rounded-t-2xl" />
       <div className="bg-elham-bg sticky top-6 h-[700px]  rounded-2xl" />
       {/* header */}
       <ClinicElhamHeader />
