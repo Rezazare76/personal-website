@@ -44,27 +44,28 @@ export default function RootLayout({
       lang="en"
       dir="ltr"
     >
-      <body className="relative mx-auto h-full  max-w-[1440px] overflow-clip rounded-xl bg-gray-900 px-2">
+      <body
+        className="custom-scroll relative mx-auto  
+       overflow-y-auto overflow-x-clip rounded-xl bg-gray-900 px-2"
+      >
         <NextTopLoader
           color="#01a4eb"
           shadow="0 0 10px #54bfe4"
           speed={300}
           height={4}
         />
-        <div className="custom-scroll h-full overflow-y-auto overflow-x-clip">
-          <Header />
-          <main className="relative mx-auto flex   flex-col items-center  ">
-            <Image
-              src="/images/flat/gray-950-header-template.svg"
-              className="relative -top-[18px]  min-h-[95px] w-[97%]"
-              alt="gray-950-header-template-bg"
-              width={1440}
-              height={95}
-            />
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <Header />
+        <main className="relative mx-auto mb-2 flex max-w-[1440px] flex-col items-center overflow-x-clip ">
+          <Image
+            src="/images/flat/gray-950-header-template.svg"
+            className="relative -top-[18px]  min-h-[95px] w-[97%]"
+            alt="gray-950-header-template-bg"
+            width={1440}
+            height={95}
+          />
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

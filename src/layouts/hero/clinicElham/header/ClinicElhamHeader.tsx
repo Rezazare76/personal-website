@@ -9,16 +9,19 @@ import SubMenu from "./subMenu/SubMenu";
 
 const ClinicElhamHeader = () => {
   const [showSubMenu, setShowSubMenu] = useState<boolean>(false);
-  const ref = useClickOutside<HTMLDivElement>(() => handleClickMenu());
   const handleClickMenu = () => {
     setShowSubMenu(!showSubMenu);
   };
+  const ref = useClickOutside<HTMLDivElement>(() => {
+    if (showSubMenu) setShowSubMenu(false);
+  });
+
   return (
     <header className=" sticky top-6 z-[1] h-[50px]   pt-11">
       <div className=" relative z-[8] mx-auto  flex  h-[58px] w-full  items-center justify-center gap-5    font-medium lg:w-[907px]">
         <Link
           className="elham-header-text-animate absolute  h-[57px] w-0 cursor-pointer xl:w-[127px]"
-          href={process.env.clinic_elham_web_site || "#"}
+          href={process.env.NEXT_PUBLIC_CLINIC_ELHAM || "#"}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,7 +40,7 @@ const ClinicElhamHeader = () => {
           <div className="flex items-center gap-3">
             <Link
               className="elham-header-logo-animate relative flex h-[47px] w-[67px]"
-              href={process.env.clinic_elham_web_site || "#"}
+              href={process.env.NEXT_PUBLIC_CLINIC_ELHAM || "#"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -83,34 +86,30 @@ const ClinicElhamHeader = () => {
                   </div>
                 </aside>
               </div>
-              <Link
-                href="/about-us"
+              <div
                 className="word-space-1 relative flex cursor-pointer  items-center py-[11px] text-[1.02rem] tracking-tighter"
                 title="درباره ما"
               >
                 درباره ما
-              </Link>
-              <Link
-                href="/blog"
+              </div>
+              <div
                 className="relative flex cursor-pointer  items-center py-[11px] tracking-tight"
                 title="وبلاگ"
               >
                 وبلاگ
-              </Link>
-              <Link
-                href="/gallery"
+              </div>
+              <div
                 className="word-space-1 relative flex cursor-pointer items-center py-[11px] tracking-tighter "
                 title="گالری تصاویر"
               >
                 گالری تصاویر
-              </Link>
-              <Link
-                href="/contact-us"
+              </div>
+              <div
                 className="relative -ms-1.5 flex cursor-pointer items-center py-[11px]"
                 title="تماس با ما"
               >
                 تماس با ما
-              </Link>
+              </div>
             </nav>
           </div>
           <div className="flex items-center gap-3"></div>

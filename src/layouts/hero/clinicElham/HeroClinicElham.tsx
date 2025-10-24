@@ -7,7 +7,7 @@ import ClinicElhamHeader from "./header/ClinicElhamHeader";
 const HeroClinicElham = () => {
   return (
     <section
-      className={`font-yekan elham relative h-[5000vh] w-full`}
+      className={`font-yekan elham relative  w-full`}
       dir="rtl"
       aria-hidden
     >
